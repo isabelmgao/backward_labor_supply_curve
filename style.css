@@ -1,0 +1,224 @@
+body {
+  font-family: 'Arapey', serif;
+  font-family: 'Roboto', sans-serif;
+  background-image: url('paper.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+svg text{
+  font-family: 'Arapey', serif;
+  font-size: 14px;
+}
+h1{
+  font: 60px arapey;
+  color: #d16558;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+h2{
+  font: 45px arapey;
+  color: #42282E;
+  margin: 0.1em 0;
+}
+h3{
+  font: 40px arapey;
+  color: #6fa188;
+  margin-top: .25em;
+  margin-bottom: .2em;
+}
+p{
+  font-size: 1.2em;
+  line-height: 1.75;
+}
+blockquote {
+  font: 2em arapey;
+  margin: 0em 5px;
+  padding: 0.25em 5px;
+  color: #e2a378;
+  /*quotes: "\201C""\201D""\2018""\2019";*/
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+.part2_radio{
+  line-height: 1.5;
+}
+
+
+ol, ul {
+	list-style: none;
+}
+
+.pagination {
+	position:fixed;
+	right:20px;
+	top: 50%;
+  transform: translateY(-50%);
+	font-size:1.4em;
+	z-index: 10;
+}
+.pagination a {
+	display:block;
+	height:30px;
+	margin-bottom:5px;
+	color: #6fa188;
+	position:relative;
+	padding:4px;
+}
+.pagination a.active:after {
+	box-shadow:inset 0 0 0 10px;
+}
+.pagination a .hover-text {
+	position:absolute;
+	right:15px;
+	top:7px;
+	opacity:0;
+	-webkit-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;
+	padding-right: 15px;
+}
+.pagination a:hover .hover-text {
+	opacity: 1;
+}
+.pagination a:after {
+	-webkit-transition:box-shadow 0.5s ease;
+	transition:box-shadow 0.5s ease;
+	width:15px;
+	height:15px;
+	display: block;
+	border:1px solid;
+  border-color: #6fa188 ;
+	border-radius:50%;
+	content:'';
+	position: absolute;
+	margin:auto;
+	top:0;
+	right:4px;
+	bottom:0;
+}
+
+
+
+
+
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+.part {
+    width: 75vw;
+    height: 100vh;
+}
+
+/*#part1 {
+    border-color: rgba(96, 236, 114, 0.3);
+    border-top-style: dotted;
+    border-right-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: dotted;
+    position: relative;
+}*/
+
+#part1-left {
+    width:49%;
+    float:left;
+    height:60%;
+}
+
+#part1-right {
+    width:49%;
+    float:right;
+    height:60%;
+}
+
+#part2 {
+    text-align: left;
+    position: relative;
+}
+
+#part2-left {
+    width:49%;
+    float:left;
+    height:75%;
+}
+
+#part2-right {
+    width:49%;
+    float:right;
+    height:75%;
+}
+
+/*#part3 {
+    border-color: rgba(236, 185, 96, 0.3);
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    position: relative;
+}*/
+
+#part3-left {
+    width:49%;
+    float:left;
+    height:60%;
+}
+
+#part3-right {
+    width:49%;
+    float:right;
+    height:60%;
+}
+
+/* Pie Chart */
+path.slice{
+	stroke-width:2px;
+}
+
+polyline{
+	opacity: .3;
+	stroke: black;
+	stroke-width: 2px;
+	fill: none;
+}
+.labelValue {
+	font-size: 60%;
+	opacity: .5;
+}
+
+text {
+  font: 12px sans-serif;
+}
+
+/* brush tool */
+
+circle {
+  fill-opacity: .7;
+}
+
+circle.hidden {
+  fill: #ccc !important;
+}
+
+.extent {
+  fill: #000;
+  fill-opacity: .125;
+  stroke: #fff;
+}
